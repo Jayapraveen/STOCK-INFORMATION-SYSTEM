@@ -1,0 +1,54 @@
+create table STUDENT(ID int IDENTITY(1,1),NAME nvarchar(MAX),DOB nvarchar(MAX),COURSE nvarchar(MAX),ADDRESS nvarchar(MAX),PHONE_NO nvarchar(MAX),EMAIL nvarchar(MAX));
+
+ Public Sub IMPORT()
+SET IDENTITY_INSERT TEST ON INSERT INTO test (ID,NAME) SELECT ID,NAME FROM STUDENT;
+    End Sub
+	
+	
+	insert into student values('name','12','as','qw','as','as')
+	
+	
+	create table RECORD(ID int IDENTITY(1,1),NAME nvarchar(MAX),INCIDENT nvarchar(MAX),RECORD_DATE nvarchar(MAX),COMMENT nvarchar(MAX));
+	
+	create table GRADES(ID int IDENTITY(1,1),NAME nvarchar(MAX),SUBJECT nvarchar(MAX),GRADE nvarchar(MAX),ASSESMENT nvarchar(MAX),COMMENT nvarchar(MAX));
+	
+	
+	
+	ALTER TABLE [STOCK] alter column QUANTITY int
+	
+	
+	
+		create table RECORD(ID int IDENTITY(1,1),NAME nvarchar(MAX),PRODNAME nvarchar(MAX),PURCHASE_DATE nvarchar(MAX),QUANTITY nvarchar(MAX),PRICE int (MAX));
+		
+		
+		
+		delete table stock
+		
+		
+		
+		create table STOCK(ID int IDENTITY(1,1),NAME nvarchar(MAX),MFDDATE nvarchar(MAX),QUANTITY int,PRICE int);
+		
+		
+		
+		
+		ALTER TABLE STOCK ADD AMOUNT INT;
+		
+		
+		
+	SET IDENTITY_INSERT STOCK OFF insert into stock values('name','12','2',(SELECT QUANTITY * PRICE FROM STOCK WHERE ID = 1)) ;
+
+		
+		UPDATE STOCK SET NAME='re',QUANTITY='50',MFDDATE='4',PRICE='2',AMOUNT=(SELECT QUANTITY * PRICE FROM STOCK WHERE ID = 1) WHERE id = 1;
+		
+		
+		
+		INSERT INTO RECORD(UNAME,PRODNAME,PURCHASE_DATE,QUANTITY,PRICE )SELECT 'USER',NAME,MFDDATE,QUANTITY,PRICEFROM CUST
+
+		
+		
+		UPDATE STOCK SET QUANTITY= QUANTITY + (SELECT QUANTITY FROM CUST WHERE ID = '" "') WHERE NAME = (SELECT NAME FROM CUST WHERE ID = '" "');
+		
+		
+		
+		UPDATE STOCK SET QUANTITY= QUANTITY - '" & SubjectTextBox.Text & "' WHERE NAME = '" & ComboBox1.Text & "';"
+		
